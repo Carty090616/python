@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 # 正则表达式
 import re
 
-# 从主页开始寻找，并实现链路去重
 pages = set()
 
 def getLinks(pageUrl):
