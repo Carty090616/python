@@ -1,0 +1,21 @@
+Centos 7 学习笔记 https://blog.csdn.net/MALI0914/article/details/84667037
+使用NASM和CL(或LINK)写HelloWorld https://blog.csdn.net/duweix/article/details/19911967
+简单的if嵌套 https://blog.csdn.net/weixin_44541600/article/details/86619801
+TortoiseGit安装和使用的图文教程 https://blog.csdn.net/qq_14918243/article/details/61919041
+各种编程语言对比！首选Python！ https://blog.csdn.net/qq_42156420/article/details/86605842
+说说当初你是为什么选择了做运维，现在的你还在坚守吗？ https://blog.csdn.net/ITboy0706/article/details/87711190
+C++对象的JSON序列化与反序列化探索 https://blog.csdn.net/TragicGuy/article/details/9150569
+jquery/js实现一个网页同时调用多个倒计时(最新的) https://blog.csdn.net/wuchengzeng/article/details/50037611
+11-Kubernetes集群常见运维操作 https://blog.csdn.net/huangjun0210/article/details/86716593
+线程阻塞的原因 https://blog.csdn.net/sinat_22013331/article/details/45740641
+Hive小文件合并 https://blog.csdn.net/yycdaizi/article/details/43341239
+关于SpringBoot bean无法注入的问题（与文件包位置有关） https://blog.csdn.net/gefangshuai/article/details/50328451
+编程语言的巅峰 https://blog.csdn.net/weixin_43932460/article/details/86702483
+一枚初级运维工程师的蜕变 https://blog.csdn.net/weixin_38642130/article/details/84974285
+编程语言，我也有话要说！ https://blog.csdn.net/weixin_34199405/article/details/86877224
+任旭阳全员邮件：一点资讯融资或将完成 https://blog.csdn.net/weixin_34220834/article/details/86722362
+深度资讯｜科创板细则千呼万唤始出来，中国版纳斯达克面临重重考验 https://blog.csdn.net/weixin_34269583/article/details/86740618
+Linux/Mac配置管理ssh会话 https://blog.csdn.net/ihtczte/article/details/87009064
+MySQL--is blocked because of many connection errors解决方案 https://blog.csdn.net/lihongyingaaa/article/details/7076410
+温习《定位》相关资讯 https://blog.csdn.net/weixin_34288121/article/details/87716152
+新闻！牛磨王抗磨网发布超燃猪年贺岁词 | “绿多多”绿色资产资讯 https://blog.csdn.net/TokenRise/article/details/86764363
