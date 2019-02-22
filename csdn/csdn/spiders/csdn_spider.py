@@ -3,10 +3,12 @@ import scrapy
 
 from csdn.items import CsdnItem
 
-
 class CsdnSpiderSpider(scrapy.Spider):
+    # 爬虫名字
     name = 'csdn_spider'
+    # 允许域
     allowed_domains = ['csdn.net']
+    # 爬取的网址
     start_urls = ['http://blog.csdn.net/nav/news']
 
     def parse(self, response):
