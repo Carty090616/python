@@ -27,7 +27,7 @@ while(True):
     lastclose_price = int(json_data.get('data').get('stock_quote_items')[0].get('lastclose_price'))
     price = int(json_data.get('data').get('stock_quote_items')[0].get('price'))
 
-    print('当前：' + str(price / 1000) + '--百分比：' + str(round(((price - lastclose_price) / lastclose_price) * 100, 2)) + '%')
+    print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())) + '--当前：' + str(price / 1000) + '--百分比：' + str(round(((price - lastclose_price) / lastclose_price) * 100, 2)) + '%')
     time.sleep(0.5)
 
 

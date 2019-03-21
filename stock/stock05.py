@@ -3,11 +3,11 @@ import urllib.parse
 import urllib.request
 import json
 
-""" 中国建筑 """
+""" 贵州茅台 """
 
 url='https://wechatapp.futu5.com/stock/basic-quote'
 values = {
-    'stock_ids': '62075163930756',
+    'stock_ids': '49649823542279',
     'market_type': '3',
     'data_type': '0',
     'uid': '-1',
