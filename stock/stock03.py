@@ -27,7 +27,18 @@ while(True):
     lastclose_price = int(json_data.get('data').get('stock_quote_items')[0].get('lastclose_price'))
     price = int(json_data.get('data').get('stock_quote_items')[0].get('price'))
 
-    print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())) + '--当前：' + str(price / 1000) + '--百分比：' + str(round(((price - lastclose_price) / lastclose_price) * 100, 2)) + '%')
+    # 获取当前时间
+    current_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+
+    # 计算当前价格
+    current_price = '--当前：' + str(price / 1000)
+
+    # 计算百分比
+    current_percent = '--百分比：' + str(round(((price - lastclose_price) / lastclose_price) * 100, 2)) + '%'
+
+    # 计算5分钟变化率
+
+    print(current_time + current_price + current_percent)
     time.sleep(0.5)
 
 
