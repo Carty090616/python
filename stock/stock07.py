@@ -2,17 +2,12 @@ import time
 import urllib.parse
 import urllib.request
 import json
-import queue
 
-""" 八一钢铁 """
+""" 中国银河 """
 
 url='https://wechatapp.futu5.com/stock/basic-quote'
-
-# 初始化queue
-q = queue.Queue(120)
-
 values = {
-    'stock_ids': '51170241965125',
+    'stock_ids': '73701640401241',
     'market_type': '3',
     'data_type': '0',
     'uid': '-1',
@@ -33,23 +28,17 @@ while(True):
     price = int(json_data.get('data').get('stock_quote_items')[0].get('price'))
 
     # 获取当前时间
-    current_time_str = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+    current_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
 
     # 计算当前价格
-    current_price_str = ' --当前：' + str(price / 1000)
+    current_price = '--当前：' + str(price / 1000)
 
     # 计算百分比
-    current_percent_str = ' --百分比：' + str(round(((price - lastclose_price) / lastclose_price) * 100, 2)) + '%'
+    current_percent = '--百分比：' + str(round(((price - lastclose_price) / lastclose_price) * 100, 2)) + '%'
 
-    # 计算1分钟变化率
-    # q.put(price / 1000)
-    # current_rate_str = ' --1分钟变化率：'
-    # if(q.qsize() <= 1):
-    #     current_rate_str += str(0)
-    # else:
-    #     current_rate_str += str(round((price / q.get()) / (60), 4))
+    # 计算5分钟变化率
 
-    print(current_time_str + current_price_str + current_percent_str)
+    print(current_time + current_price + current_percent)
     time.sleep(0.5)
 
 
