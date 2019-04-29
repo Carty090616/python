@@ -65,8 +65,10 @@ def pandas_candlestick_ohlc(dat, stick="day", otherseries=None):
             'Valid inputs to argument "stick" include the strings "day", "week", "month", "year", or a positive integer')
 
     # 设置绘图参数，包括用于绘图的axis对象ax
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(600.0, 13.0))
+    # fig = plt.figure(figsize=(12.0, 13.0), dpi=1200)
     fig.subplots_adjust(bottom=0.13)
+
     # 判断数据（数组形式）的长度是否大于730天
     if plotdat.index[-1] - plotdat.index[0] < pd.Timedelta('730 days'):
         weekFormatter = DateFormatter('%Y-%m-%d')  # 设置时间格式
@@ -111,9 +113,8 @@ def pandas_candlestick_ohlc(dat, stick="day", otherseries=None):
              horizontalalignment='right')
 
     # 保存图片
-    # plt.subplots_adjust(left=0.09, right=1, wspace=0.25, hspace=0.25, bottom=0.13, top=0.91)
-    # plt.savefig('stock.png')
+    plt.savefig('stock.png')
 
-    plt.show()
+    # plt.show()
 
 
