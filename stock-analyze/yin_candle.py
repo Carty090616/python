@@ -65,7 +65,7 @@ def pandas_candlestick_ohlc(dat, stick="day", otherseries=None):
             'Valid inputs to argument "stick" include the strings "day", "week", "month", "year", or a positive integer')
 
     # 设置绘图参数，包括用于绘图的axis对象ax
-    fig, ax = plt.subplots(figsize=(600.0, 13.0))
+    fig, ax = plt.subplots(figsize=(13.0, 6.0))
     # fig = plt.figure(figsize=(12.0, 13.0), dpi=1200)
     fig.subplots_adjust(bottom=0.13)
 

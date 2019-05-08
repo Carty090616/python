@@ -11,7 +11,7 @@ import datetime
 stock_code = '000001.sz'
 
 # 需要查询的时间段
-start_date = "2005-12-03"
+start_date = "2018-12-03"
 end_date = "2019-04-23"
 
 # 获取的股票数据
